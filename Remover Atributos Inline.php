@@ -5,6 +5,8 @@
 	# @uso -> removerAttrDOM( $html, $atributos = [ ] );
 #-------------------------#
 function removerAttrDOM( $html, $atributos = [ ] ) {
+	if( !strlen( $html ) ) return $html; //No se puede pasar un empty string!
+
 	$dom = new DOMDocument;
 	$dom->loadHTML( $html );
 	$nodos = $dom->getElementsByTagName( '*' ); //Obtengo todos los nodos( etiquetas )
