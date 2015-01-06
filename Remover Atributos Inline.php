@@ -20,4 +20,8 @@ function removerAttrDOM( $html, $atributos = [ ] ) {
 	return $dom->saveHTML();
 }
 
+#EJEMPLO DE USO
+/*
+	removerAttrDOM( $html , [ 'onclick', 'onload', 'src', 'href' ] );
+*/
 ?>
